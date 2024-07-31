@@ -23,7 +23,7 @@ jobs:
          - name: Checkout repository code into runner
            uses: actions/Checkout@v2
          - name: Build the Docker image
-           run: docker buil -t ${{ secrets.DOCKERHUB_USERNAME }}/workflow-website:latest .
+           run: docker built -t ${{ secrets.DOCKERHUB_USERNAME }}/workflow-website:latest .
          - name: Log in to Docker Hub
            uses: docker/login-action@v1
            with:
